@@ -3,51 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city" required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button"/>
-      </form>
-    </header>
-    <main>
-      <div class="weather-app-data">
-      <div>
-      <h1 class="weather-app-city">Berlin</h1>
-      <p class="weather-app-details">
-        Tuesday 12:53, sunny
-        </br>
-        Humidity: <strong>66%</strong>, Wind: <strong>4.5km/h</strong>
-      </p>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="weather-app-city">Berlin</h1>
+            <p class="weather-app-details">
+              Tuesday 12:53, sunny
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>4.5km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/bridgette-prpic" target="_blank">
+          Bridgette Prpic</a
+        >, and is open-sourced on
+        <a
+          href="https://github.com/bridgette-prpic/weather-app"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://bridgettes-weather-app.netlify.app/" target="_blank">
+          Netlify
+        </a>
+      </footer>
     </div>
-    <div class="weather-app-temperature-container">
-      <div class="weather-app-icon">🌤️</div>
-      <div class="weather-app-temperature">12</div>
-      <div class="weather-app-unit">°C</div>
-    </div>
-  </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/bridgette-prpic" target="_blank">
-        Bridgette Prpic</a
-      >,
-      and is open-sourced on
-      <a href="https://github.com/bridgette-prpic/weather-app" target="_blank">
-        GitHub</a
-      >
-      and hosted on
-      <a href="https://bridgettes-weather-app.netlify.app/" target="_blank">
-        Netlify
-      </a>
-    </footer>
-  </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
